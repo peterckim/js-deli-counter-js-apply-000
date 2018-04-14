@@ -13,3 +13,16 @@ function nowServing(line) {
     return `Currently serving ${firstPerson}.`;
   }
 }
+
+function currentLine(line) {
+  var i;
+  var result = 'The line is currently: ';
+  if (line.length === 0) {
+    return 'The line is currently empty.';
+  }
+  
+  for (i = 0; i < line.length; i++) {
+    var j = i + 1;
+    result = result + `${j}. ${line[i]},`
+  }
+}
