@@ -10,6 +10,6 @@ function nowServing(line) {
   if (line.length > 0) {
     var firstPerson = line[0];
     line.pop();
-    return firstPerson;
+    return `Currently serving ${firstPerson}.;
   }
 }
