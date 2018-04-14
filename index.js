@@ -23,6 +23,12 @@ function currentLine(line) {
   
   for (i = 0; i < line.length; i++) {
     var j = i + 1;
-    result = result + `${j}. ${line[i]},`
+    if (i < line.length - 1) {
+      result = result + `${j}. ${line[i]},`;
+    } else {
+      result = result + `${j}. ${line[i]}`;
+    }
   }
+  
+  return result;
 }
