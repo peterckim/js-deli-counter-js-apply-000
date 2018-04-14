@@ -9,7 +9,7 @@ function nowServing(line) {
   }
   if (line.length > 0) {
     var firstPerson = line[0];
-    line.delete[0];
+    delete line[0];
     return `Currently serving ${firstPerson}.`;
   }
 }
